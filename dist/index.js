@@ -1,4 +1,11 @@
-let message = "Hello World!";
-console.log(message);
-export {};
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsSUFBSSxPQUFPLEdBQVcsY0FBYyxDQUFDO0FBQ3JDLE9BQU8sQ0FBQyxHQUFHLENBQUMsT0FBTyxDQUFDLENBQUMifQ==
+"use strict";
+let sales = 123_456_789;
+let course = 'TypeScript';
+let is_published = true;
+let level;
+level = 1;
+level = "a";
+function render(document) {
+    console.log(document);
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5kZXguanMiLCJzb3VyY2VSb290IjoiIiwic291cmNlcyI6WyIuLi9zcmMvaW5kZXgudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IjtBQUFBLElBQUksS0FBSyxHQUFHLFdBQVcsQ0FBQztBQUN4QixJQUFJLE1BQU0sR0FBRyxZQUFZLENBQUM7QUFDMUIsSUFBSSxZQUFZLEdBQUcsSUFBSSxDQUFDO0FBQ3hCLElBQUksS0FBSyxDQUFDO0FBQ1YsS0FBSyxHQUFHLENBQUMsQ0FBQTtBQUNULEtBQUssR0FBRyxHQUFHLENBQUE7QUFFWCxTQUFTLE1BQU0sQ0FBQyxRQUFhO0lBQ3pCLE9BQU8sQ0FBQyxHQUFHLENBQUMsUUFBUSxDQUFDLENBQUM7QUFDMUIsQ0FBQyJ9

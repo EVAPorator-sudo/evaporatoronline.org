@@ -1,11 +1,8 @@
 {
   "compilerOptions": {
-    "target": "ES2024",
-    "module": "ESNext",
+    "target": "es2024",
     "strict": true,
     "alwaysStrict": true,
-    "moduleDetection": "force",
-    "moduleResolution": "Node",
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
