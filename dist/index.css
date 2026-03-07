@@ -7,13 +7,13 @@
 body {
     margin: 0;
     display: flex;
-    flex-direction: column;
     position: relative;
     background-color: white;
     object-fit: fill;
 }
 
 #mainBody{
+    flex-direction: column;
     height: 200vh;
     background-image: url("resources/backgroundmaze.png");
 }
@@ -81,6 +81,7 @@ h1{
 }
 
 #musicBody{
+    flex-direction: column;
     height: 100vh;
     background-color: black;
 }
@@ -93,4 +94,20 @@ h1{
     flex-direction: row;
     margin: 0.1em;
     padding-right: 0.2em;
+}
+
+#mazeBody {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+
+}
+
+#container{
+    width: 50%;
+    height: 50%;
+    background-color: black;
 }
