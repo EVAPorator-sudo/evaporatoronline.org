@@ -21,4 +21,4 @@ jobs:
         run: rm -rf /usr/share/nginx2/html/* || echo "/usr/share/nginx2/html does not exist, skipping"
 
       - name: Deploy website
-        run: cp -a /workdir/tmp_website2/* /usr/share/nginx2/html/
+        run: cp -a /workdir/tmp_website2/dist/* /usr/share/nginx2/html/
