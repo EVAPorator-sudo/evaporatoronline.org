@@ -10,10 +10,10 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: #3434eb;
+    background-color: white;
 }
 
-.mainpage {
+#mainpage {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,6 +27,6 @@ h1 {
     background-color: black;
     color: white;
     padding: 0.2em;
-    font-size: 100%;
+    font-size: 5em;
 
 }
