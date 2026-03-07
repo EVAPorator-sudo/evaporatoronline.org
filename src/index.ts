@@ -1,4 +1,4 @@
-const body = safeFetch("body");
+const body = safeFetch("mainBody");
 
 const baseApi = "https://evaporatoronline.org"
 const genApi: apiUrl = `${baseApi}/generate`
