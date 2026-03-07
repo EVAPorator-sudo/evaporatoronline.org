@@ -5,28 +5,63 @@
 }
 
 body {
-    height: 100vh;
+    height: 200vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     position: relative;
     background-color: white;
+    background-image: url("resources/backgroundmaze.png");
+    object-fit: fill;
+}
+
+.page{
+    display: flex;
+    flex: 1;
+    height: 100vh;
 }
 
 #mainpage {
-    display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: fill;
-    background-image: url("resources/backgroundmaze.png");
-    flex: 1;
 }
 
-h1 {
+#subpage{
+    display: flex;
+    flex-direction: column;
+}
+
+.contentRow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: calc(90% / 3);
+    height: 50%;
+    width: 100%;
+}
+
+.box{
+    background-color: aliceblue;
+    height: calc(9em * 2);
+    width: calc(16em * 2);
+}
+
+.display{
+    justify-content: center;
+}
+
+#mainHeader {
 
     background-color: black;
     color: white;
     padding: 0.2em;
     font-size: 5em;
 
+}
+
+.itemHeader{
+    background-color: black;
+    color: white;
+    padding: 0.2em;
+    text-align: center;
 }

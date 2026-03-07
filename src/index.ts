@@ -1,4 +1,4 @@
-const mainPage = safeFetch("mainpage");
+const body = safeFetch("body");
 
 const baseApi = "https://evaporatoronline.org"
 const genApi: apiUrl = `${baseApi}/generate`
@@ -23,11 +23,11 @@ function safeFetch(elementName: string): HTMLElement{
 
 async function getBackgroundMaze(){
 
-    var screenLength = screen.width + 5;
-    var screenHeight = screen.height + 5;
+    var screenLength = screen.width;
+    var screenHeight = (2 * screen.height) + 2;
 
     const response = await fetch(`${backgroundApi}?screenWidth=${screenLength}&screenHeight=${screenHeight}`);
     const blob = await response.blob();
 
-    mainPage.style.backgroundImage = `url(${URL.createObjectURL(blob)})`;
+    body.style.backgroundImage = `url(${URL.createObjectURL(blob)})`;
 }
