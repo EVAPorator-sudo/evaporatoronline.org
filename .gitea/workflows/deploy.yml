@@ -1,0 +1,24 @@
+name: Deploy Website
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      - name: Clear temporary directory
+        run: |
+          rm -rf /workdir/* || echo "/workdir/tmp_website2 does not exist, skipping"
+
+      - name: Clone repository
+        run: git clone --depth 1 http://gitea:3000/Jevadmin/evaporatoronline.org.git /workdir/tmp_website2
+
+      - name: Clear webserver directory
+        run: rm -rf /usr/share/nginx2/html/* || echo "/usr/share/nginx2/html does not exist, skipping"
+
+      - name: Deploy website
+        run: cp -a /workdir/tmp_website2/* /usr/share/nginx2/html/
